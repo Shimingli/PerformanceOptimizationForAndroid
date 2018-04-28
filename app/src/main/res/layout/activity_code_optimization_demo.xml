@@ -1,6 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
+  <TextView
+      android:layout_gravity="center"
+      android:text="数据结构的选择"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content" />
+    <TextView
+        android:layout_gravity="center"
+        android:text="Demo，看注释"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
-</android.support.constraint.ConstraintLayout>
+  <Button
+      android:layout_marginTop="10dp"
+      android:id="@+id/btn_handler_demo"
+      android:layout_gravity="center"
+      android:textColor="@color/colorAccent"
+      android:text="HandLer--->正确的使用的方法"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content" />
+
+  <Button
+      android:layout_marginTop="10dp"
+      android:id="@+id/btn_context_demo"
+      android:layout_gravity="center"
+      android:textColor="@color/colorAccent"
+      android:text="Context--->正确的使用的方法"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content" />
+</LinearLayout>

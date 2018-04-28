@@ -7,6 +7,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
+import com.shiming.performanceoptimization.code_optimization.CodeOptimizationActivity;
+
+
 /**
  * author： Created by shiming on 2018/4/28 10:52
  * mailbox：lamshiming@sina.com

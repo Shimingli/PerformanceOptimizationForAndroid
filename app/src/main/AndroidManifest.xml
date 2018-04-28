@@ -16,7 +16,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".CodeOptimizationActivity"/>
+        <activity android:name=".code_optimization.CodeOptimizationActivity" />
+        <activity android:name=".code_optimization.HandlerActivity" />
+        <activity android:name=".code_optimization.ContextActivity"/>
+        <receiver
+            android:name=".code_optimization.MyBroadcaseRecriver"
+            android:enabled="true"
+            android:exported="true" />
+
     </application>
 
 </manifest>
