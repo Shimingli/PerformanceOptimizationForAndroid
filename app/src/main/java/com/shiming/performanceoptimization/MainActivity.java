@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.shiming.performanceoptimization.code_optimization.CodeOptimizationActivity;
+import com.shiming.performanceoptimization.image_optimization.ImageOptimizationActivity;
 
 
 /**
@@ -18,6 +19,7 @@ import com.shiming.performanceoptimization.code_optimization.CodeOptimizationAct
 public  class MainActivity extends AppCompatActivity {
 
     private Button mBtn_codeOptimization;
+    private Button mBtn_imageOptimization;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -25,7 +27,7 @@ public  class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         mBtn_codeOptimization = findViewById(R.id.btn_1);
-//        Button viewById = findViewById(R.id.btn_2);
+        mBtn_imageOptimization = findViewById(R.id.btn_2);
 //        Button viewById = findViewById(R.id.btn_3);
 //        Button viewById = findViewById(R.id.btn_4);
 //        Button viewById = findViewById(R.id.btn_5);
@@ -35,5 +37,11 @@ public  class MainActivity extends AppCompatActivity {
                startActivity(new Intent(MainActivity.this,CodeOptimizationActivity.class));
            }
        });
+        mBtn_imageOptimization.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,ImageOptimizationActivity.class));
+            }
+        });
     }
 }

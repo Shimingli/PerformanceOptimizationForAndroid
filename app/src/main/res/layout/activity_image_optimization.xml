@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.shiming.performanceoptimization.image_optimization.ImageOptimizationActivity">
+  <TextView
+      android:gravity="center"
+      android:text="图片优化的一些必须知道的点"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content" />
+</android.support.constraint.ConstraintLayout>

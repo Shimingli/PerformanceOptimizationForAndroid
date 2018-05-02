@@ -25,7 +25,8 @@
             android:enabled="true"
             android:exported="true" />
 
-        <activity android:name=".code_optimization.JavaFourWaysOfReferenceActivity"></activity>
+        <activity android:name=".code_optimization.JavaFourWaysOfReferenceActivity" />
+        <activity android:name=".image_optimization.ImageOptimizationActivity"></activity>
     </application>
 
 </manifest>
