@@ -18,12 +18,14 @@
         </activity>
         <activity android:name=".code_optimization.CodeOptimizationActivity" />
         <activity android:name=".code_optimization.HandlerActivity" />
-        <activity android:name=".code_optimization.ContextActivity"/>
+        <activity android:name=".code_optimization.ContextActivity" />
+
         <receiver
             android:name=".code_optimization.MyBroadcaseRecriver"
             android:enabled="true"
             android:exported="true" />
 
+        <activity android:name=".code_optimization.JavaFourWaysOfReferenceActivity"></activity>
     </application>
 
 </manifest>

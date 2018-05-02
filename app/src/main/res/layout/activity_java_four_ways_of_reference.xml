@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/text1"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_gravity="center"
+        android:text="数据结构的选择"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/text2"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_gravity="center"
+        android:text="Demo，看注释"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/text3"
+        android:layout_gravity="center"
+        android:textColor="@color/colorAccent"
+        android:text="HandLer--->正确的使用的方法"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/text4"
+        android:layout_gravity="center"
+        android:textColor="@color/colorAccent"
+        android:text="Context--->正确的使用的方法"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/text5"
+        android:layout_gravity="center"
+        android:textColor="@color/colorAccent"
+        android:text="Context--->正确的使用的方法"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/text6"
+        android:layout_gravity="center"
+        android:textColor="@color/colorAccent"
+        android:text="Context--->正确的使用的方法"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/text7"
+        android:layout_gravity="center"
+        android:textColor="@color/colorAccent"
+        android:text="Context--->正确的使用的方法"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+</ScrollView>

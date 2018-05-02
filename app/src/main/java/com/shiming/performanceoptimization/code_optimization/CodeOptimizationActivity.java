@@ -117,7 +117,12 @@ public  class CodeOptimizationActivity extends AppCompatActivity {
                 startActivity(new Intent(CodeOptimizationActivity.this,HandlerActivity.class));
             }
         });
-
+        findViewById(R.id.btn_four_ways_of_reference_demo).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(CodeOptimizationActivity.this,JavaFourWaysOfReferenceActivity.class));
+            }
+        });
     }
 
     /**

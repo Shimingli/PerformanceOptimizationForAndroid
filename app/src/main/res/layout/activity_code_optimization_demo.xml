@@ -32,4 +32,13 @@
       android:text="Context--->正确的使用的方法"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content" />
+
+  <Button
+      android:layout_marginTop="10dp"
+      android:id="@+id/btn_four_ways_of_reference_demo"
+      android:layout_gravity="center"
+      android:textColor="@color/colorAccent"
+      android:text="Java的四种的引用方式"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content" />
 </LinearLayout>
