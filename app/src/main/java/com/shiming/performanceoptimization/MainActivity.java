@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.shiming.performanceoptimization.code_optimization.CodeOptimizationActivity;
+import com.shiming.performanceoptimization.electric_quantity_optimization.ElectricQuantityOptimizationActivity;
 import com.shiming.performanceoptimization.image_optimization.ImageOptimizationActivity;
 
 
@@ -20,6 +21,7 @@ public  class MainActivity extends AppCompatActivity {
 
     private Button mBtn_codeOptimization;
     private Button mBtn_imageOptimization;
+    private Button mBtn_electricQuantityOptimization;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -28,7 +30,7 @@ public  class MainActivity extends AppCompatActivity {
 
         mBtn_codeOptimization = findViewById(R.id.btn_1);
         mBtn_imageOptimization = findViewById(R.id.btn_2);
-//        Button viewById = findViewById(R.id.btn_3);
+        mBtn_electricQuantityOptimization = findViewById(R.id.btn_3);
 //        Button viewById = findViewById(R.id.btn_4);
 //        Button viewById = findViewById(R.id.btn_5);
        mBtn_codeOptimization.setOnClickListener(new View.OnClickListener() {
@@ -41,6 +43,12 @@ public  class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this,ImageOptimizationActivity.class));
+            }
+        });
+        mBtn_electricQuantityOptimization.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                 startActivity(new Intent(MainActivity.this,ElectricQuantityOptimizationActivity.class));
             }
         });
     }

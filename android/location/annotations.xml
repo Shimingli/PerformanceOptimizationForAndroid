@@ -1,0 +1,6 @@
+<root>
+    <item
+        name='android.location.LocationManager void addTestProvider(java.lang.String, boolean, boolean, boolean, boolean, boolean, boolean, boolean, int, int)'>
+        <annotation name='java.lang.Deprecated' />
+    </item>
+</root>

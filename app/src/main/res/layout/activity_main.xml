@@ -20,11 +20,16 @@
         android:text="图片优化"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
+    <TextView
+        android:textColor="@color/colorPrimary"
+        android:text="如果点击电量优化，App崩溃了，请给与全部权限，还要在开发者模式里面给与位置信息模拟的设置，如果崩溃了，你也可以发现app会自动的重新启动，这是AlarmManager的应用，注意看MyApplication里面的代码，tks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
     <Button
         android:gravity="center"
         android:layout_gravity="center"
         android:id="@+id/btn_3"
-        android:text="代码优化"
+        android:text="电量优化"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
     <Button

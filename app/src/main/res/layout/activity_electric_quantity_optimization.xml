@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="电量优化title"
+      tools:layout_editor_absoluteX="123dp"
+      tools:layout_editor_absoluteY="7dp" />
+
+  <TextView
+      android:id="@+id/tv_location_des"
+      android:textColor="@color/colorPrimaryDark"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="184dp"
+      android:text="位置信息"
+      tools:layout_editor_absoluteY="38dp"
+      tools:ignore="MissingConstraints"
+      android:layout_marginRight="184dp" />
+  <TextView
+      android:text="AlarmManager的Demo解释---看代码"
+      android:layout_gravity="center"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content" />
+  <Button
+      android:text="点我崩溃，奔溃了，app自动重启，AlarmManeger的应用"
+      android:id="@+id/tv_crash"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content" />
+  <TextView
+      android:id="@+id/tv_alarm_manager"
+      android:text="WakeLock ---Demo"
+      android:layout_gravity="center"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content" />
+
+  <Button
+      android:text="WakeLock的应用，屏幕高亮显示"
+      android:id="@+id/tv_wakelock"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content" />
+</LinearLayout>
