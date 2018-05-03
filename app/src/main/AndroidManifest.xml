@@ -2,19 +2,26 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.shiming.performanceoptimization">
-   <!-- 给与位置的权限-->
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
-    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION"
+
+    <!-- 给与位置的权限 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission
+        android:name="android.permission.ACCESS_MOCK_LOCATION"
         tools:ignore="MockLocation" />
-    <uses-permission android:name="android.permission.UPDATE_DEVICE_STATS"
+    <uses-permission
+        android:name="android.permission.UPDATE_DEVICE_STATS"
         tools:ignore="ProtectedPermissions" />
-    　<uses-permission android:name="android.permission.INTERNET" />
+
+    　
+    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-     <!--  WakeLock 的使用-->
+    <!-- WakeLock 的使用 -->
     <uses-permission android:name="android.permission.WAKE_LOCK" />
-    <uses-permission android:name="android.permission.DEVICE_POWER"
+    <uses-permission
+        android:name="android.permission.DEVICE_POWER"
         tools:ignore="ProtectedPermissions" />
+
     <application
         android:name=".MyApplication"
         android:allowBackup="true"
@@ -41,12 +48,15 @@
 
         <activity android:name=".code_optimization.JavaFourWaysOfReferenceActivity" />
         <activity android:name=".image_optimization.ImageOptimizationActivity" />
-        <activity android:name=".electric_quantity_optimization.ElectricQuantityOptimizationActivity"/>
+        <activity android:name=".electric_quantity_optimization.ElectricQuantityOptimizationActivity" />
+
         <receiver android:name=".electric_quantity_optimization.MyReceiver">
             <intent-filter>
                 <action android:name="action" />
             </intent-filter>
         </receiver>
+
+        <activity android:name=".layout_Optimization.LayoutOptimizationActivity"/>
     </application>
 
 </manifest>

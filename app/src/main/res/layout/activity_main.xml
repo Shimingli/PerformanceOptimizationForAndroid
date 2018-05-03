@@ -36,7 +36,7 @@
         android:gravity="center"
         android:layout_gravity="center"
         android:id="@+id/btn_4"
-        android:text="代码优化"
+        android:text="布局优化"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
     <Button
