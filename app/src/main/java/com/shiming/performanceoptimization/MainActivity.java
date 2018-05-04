@@ -11,6 +11,7 @@ import com.shiming.performanceoptimization.code_optimization.CodeOptimizationAct
 import com.shiming.performanceoptimization.electric_quantity_optimization.ElectricQuantityOptimizationActivity;
 import com.shiming.performanceoptimization.image_optimization.ImageOptimizationActivity;
 import com.shiming.performanceoptimization.layout_Optimization.LayoutOptimizationActivity;
+import com.shiming.performanceoptimization.network_optimization.NetWorkOptimizationActivity;
 
 
 /**
@@ -24,6 +25,7 @@ public  class MainActivity extends AppCompatActivity {
     private Button mBtn_imageOptimization;
     private Button mBtn_electricQuantityOptimization;
     private Button mBtn_layoutOptimization;
+    private Button mBtn_netWorkOptimization;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -34,7 +36,7 @@ public  class MainActivity extends AppCompatActivity {
         mBtn_imageOptimization = findViewById(R.id.btn_2);
         mBtn_electricQuantityOptimization = findViewById(R.id.btn_3);
         mBtn_layoutOptimization = findViewById(R.id.btn_4);
-//        Button viewById = findViewById(R.id.btn_5);
+        mBtn_netWorkOptimization = findViewById(R.id.btn_5);
        mBtn_codeOptimization.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {
@@ -57,6 +59,12 @@ public  class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this,LayoutOptimizationActivity.class));
+            }
+        });
+        mBtn_netWorkOptimization.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,NetWorkOptimizationActivity.class));
             }
         });
     }

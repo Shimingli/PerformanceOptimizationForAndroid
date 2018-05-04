@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.shiming.performanceoptimization.network_optimization.NetWorkOptimizationActivity">
+   <ScrollView
+       android:layout_gravity="center"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <LinearLayout
+           android:orientation="vertical"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+       <TextView
+           android:textColor="@color/colorPrimaryDark"
+           android:gravity="center"
+           android:layout_gravity="center"
+           android:text="避免DNS解析"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+       <TextView
+           android:layout_margin="10dp"
+           android:layout_gravity="center"
+           android:text="DNS域名的系统，主要的功能根据应用请求所用的域名URL去网络上面映射表中查相对应的IP地址，这个过程有可能会消耗上百毫秒，而且可能存在着DNS劫持的危险，可以替换为Ip直接连接的方式来代替域名访问的方法，从而达到更快的网络请求，但是使用Ip地址不够灵活，当后台变换了Ip地址的话，会出现访问不了，前段的App需要发包，解决方法是增加Ip地址动态更新的能力，或者是在IP地址访问失败了，切换到域名的访问"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+       <TextView
+           android:textColor="@color/colorPrimary"
+           android:layout_margin="10dp"
+           android:layout_gravity="center"
+           android:id="@+id/ping_tv_demo"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+
+
+       </LinearLayout>
+   </ScrollView>
+</FrameLayout>
