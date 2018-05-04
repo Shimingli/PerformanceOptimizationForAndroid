@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView android:gravity="center"
+        android:text="merge 标签 在某些场景下可以减少布局的层次,由于所有的"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</merge>

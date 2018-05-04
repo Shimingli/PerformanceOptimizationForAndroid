@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="10dp"
+    android:src="@drawable/ic_launcher_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:text="如果这个根布局是个View，比如说是个ImagView，那么找出来的id为null，得必须注意这一点"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <!--如果这个根布局是个View，比如说是个ImagView，那么找出来的id为null，得必须注意这一点-->
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:id="@+id/imageview"
+        android:padding="10dp"
+        android:src="@drawable/ic_launcher_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</FrameLayout>

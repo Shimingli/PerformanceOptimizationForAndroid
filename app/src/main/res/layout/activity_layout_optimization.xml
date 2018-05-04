@@ -1,9 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.shiming.performanceoptimization.layout_Optimization.LayoutOptimizationActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <include android:layout_height="50dp"
+             android:layout_width="match_parent"
+             layout="@layout/layout_include"
+        />
+    <Button
+        android:id="@+id/btn_view_stub"
+        android:layout_gravity="center"
+        android:text="点我加载ViewStub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+   <!-- <include
+        layout="@layout/merge_layout"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        />-->
+    <ViewStub
+        android:padding="10dp"
+        android:background="@color/colorPrimary"
+        android:layout_gravity="center"
+        android:inflatedId="@+id/find_view_stub"
+        android:id="@+id/view_stub"
+        android:layout="@layout/view_stub_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <Button
+        android:id="@+id/btn_go_to_show"
+        android:layout_gravity="center"
+        android:text="点我merge activiy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+    <TextView
+        android:text="我是文字"
+        android:drawableBottom="@mipmap/ic_launcher_round"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+   <TextView
+       android:text="我是title2"
+       android:drawableEnd="@mipmap/ic_launcher_round"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:drawableRight="@mipmap/ic_launcher_round" />
+    <TextView
+        android:text="我是文字33"
+        android:drawableLeft="@mipmap/ic_launcher_round"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@mipmap/ic_launcher_round" />
+
+    <TextView
+        android:drawableTop="@mipmap/ic_launcher_round"
+        android:text="我是文字3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

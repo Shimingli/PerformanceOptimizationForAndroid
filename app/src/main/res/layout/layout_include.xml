@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    android:gravity="center"
+    android:text="我是include进来的:在安卓中经常会使用到相同的布局，比如说title，最佳的实践的方法就是把相同的布局抽取出来，独立成一个xml文件，需要使用到的时候，就把这个布局include进来，不仅减少了代码量，而且修改这个相同的布局，只需要修改一个地方即可"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"/>
