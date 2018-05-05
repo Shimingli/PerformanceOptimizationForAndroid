@@ -9,12 +9,10 @@
     <uses-permission
         android:name="android.permission.ACCESS_MOCK_LOCATION"
         tools:ignore="MockLocation" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission
         android:name="android.permission.UPDATE_DEVICE_STATS"
         tools:ignore="ProtectedPermissions" />
-
-
-    　
 
 
     <uses-permission android:name="android.permission.INTERNET" />

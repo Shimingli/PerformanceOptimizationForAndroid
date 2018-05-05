@@ -32,8 +32,14 @@
            android:id="@+id/ping_tv_demo"
            android:layout_width="wrap_content"
            android:layout_height="wrap_content" />
-
-
+           <TextView
+               android:textColor="@color/colorPrimary"
+               android:layout_margin="10dp"
+               android:layout_gravity="center"
+               android:id="@+id/net_work"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
        </LinearLayout>
+
    </ScrollView>
 </FrameLayout>
