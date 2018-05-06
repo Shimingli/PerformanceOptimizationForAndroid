@@ -5,6 +5,8 @@ import android.content.Context;
 /**
  * author： Created by shiming on 2018/4/28 16:36
  * mailbox：lamshiming@sina.com
+ * 单例模式，如果不得不传入Context，由于单例一直存在会导致Activity或者是Service的单例引用，从而不会被垃圾回收，
+ * Activity中的关联的View和数据结构也不会被释放，正确的方式应该使用Application中的Context
  */
 
 class SingleInstance {

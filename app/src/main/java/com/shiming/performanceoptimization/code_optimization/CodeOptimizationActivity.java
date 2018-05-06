@@ -114,7 +114,7 @@ public  class CodeOptimizationActivity extends AppCompatActivity {
         findViewById(R.id.btn_context_demo).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(CodeOptimizationActivity.this,HandlerActivity.class));
+                startActivity(new Intent(CodeOptimizationActivity.this,ContextActivity.class));
             }
         });
         //java 四种引用方式和引用队列的解释
