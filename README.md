@@ -1,6 +1,9 @@
 # PerformanceOptimizationForAndroid
 安卓的性能优化
 #### 写在前面的话，前段时间写了一篇文章 [23种设计模式](https://www.jianshu.com/p/4e01479b6a2c)，写的不详细，因为如果要写的很详细，估计一年半载都写不完，完全都是按照自己理解，每个设计模式就画了一个简单的图，同时完成了一个小Demo，哪知道这篇文章成了我在简书点赞最高的一篇文章，实在有点受宠若惊，谢谢各位大佬点赞！！！
+
+#### Demo下载的地址
+![F0xJ.png](https://upload-images.jianshu.io/upload_images/5363507-bfcb14dc69cb04ce.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 #### 这篇文章分为五个部分代码优化、图片优化、布局优化、网络优化、电量优化，尽量每个方法都写了小的Demo！
 ![image.png](https://upload-images.jianshu.io/upload_images/5363507-151e1acaa8105b43.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
