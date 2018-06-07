@@ -20,12 +20,12 @@
         layout="@layout/merge_layout"
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
-        />-->
+        />      android:inflatedId="@+id/view_stub_inflateid"-->
     <ViewStub
         android:padding="10dp"
         android:background="@color/colorPrimary"
         android:layout_gravity="center"
-        android:inflatedId="@+id/find_view_stub"
+        android:inflatedId="@+id/view_stub_inflateid"
         android:id="@+id/view_stub"
         android:layout="@layout/view_stub_imageview"
         android:layout_width="wrap_content"

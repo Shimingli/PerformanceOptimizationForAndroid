@@ -43,6 +43,7 @@ public class LayoutOptimizationActivity extends AppCompatActivity {
         ViewStub 是一种不可见的并且大小为0的试图，它可以延迟到运行时才填充inflate 布局资源，当Viewstub设为可见或者是inflate的时候，就会填充布局资源，这个布局和普通的试图就基本上没有任何区别，比如说，加载网络失败，或者是一个比较消耗性能的功能，需要用户去点击才可以加载，参考我的开源的项目WritingPen
          */
         mViewStub = findViewById(R.id.view_stub);
+
         mBtnViewStub.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -53,33 +54,48 @@ public class LayoutOptimizationActivity extends AppCompatActivity {
                     /**
                      * ViewStub.inflate() 的方法和 setVisibility 方法是差不多，因为 setVisibility方法会（看源码）走这个inflate的方法
                      */
-//                    View inflate = mViewStub.inflate();
-                    mViewStub.setVisibility(View.VISIBLE);
+                    View inflate = mViewStub.inflate();
+//                    mViewStub.setVisibility(View.VISIBLE);
+                    // TODO: 2018/6/7 如果设置了      android:inflatedId="@+id/view_stub_inflateid" 在ViewStub ，那么ViewStub的layout的根布局找出来的id 会为null ，如果没有设置 ，就可以找出来，但是前提以一定要 inflate 或者是 设置可见 
+                    View viewById = findViewById(R.id.view_stub_layout);
+                    System.out.println("shiming viewStub layout"+viewById);// shiming viewStub layoutnull
                     //inflate--->android.support.v7.widget.AppCompatImageView{de7e3a2 V.ED..... ......I. 0,0-0,0 #7f07003e app:id/find_view_stub}
-//                    System.out.println("shiming inflate--->"+inflate);
-                    final View find_view_stub = findViewById(R.id.find_view_stub);
-                    System.out.println("shiming ----"+find_view_stub);
-
-
-                    View iamgeivew11 = find_view_stub.findViewById(R.id.imageview);
+                    System.out.println("shiming inflate--->"+inflate);
+                    final View find_view_stub = findViewById(R.id.view_stub_inflateid);
+                    System.out.println("shiming  find_view_stub----"+find_view_stub);
+//
+//
+                   // View iamgeivew11 = find_view_stub.findViewById(R.id.imageview);
                     //himing ---- iamgeivew11null
                     // TODO: 2018/5/4 為啥為null  原因是布局文件中根布局只有View，没有ViewGroup
-                    System.out.println("shiming ---- iamgeivew11"+iamgeivew11);
+                    //System.out.println("shiming ---- iamgeivew11"+iamgeivew11);
 
                 }else{
+                    View viewById = findViewById(R.id.view_stub_layout);
+                    System.out.println("shiming viewStub layout 已经inflate了"+viewById);
                     Toast.makeText(LayoutOptimizationActivity.this,"已经inflate了",Toast.LENGTH_LONG).show();
-                    final View viewById = findViewById(R.id.find_view_stub);
+                   // final View viewById = findViewById(R.id.view_stub_inflateid);
                     View iamgeivew = findViewById(R.id.imageview);
                     //已经inflate了android.support.v7.widget.AppCompatImageView{4637833 V.ED..... ........ 348,294-732,678 #7f07003e app:id/find_view_stub}
-                    System.out.println("shiming l----已经inflate了"+viewById);//
+                   // System.out.println("shiming l----已经inflate了"+viewById);//
                     System.out.println("shiming l----已经inflate了iamgeivew"+iamgeivew);//已经inflate了iamgeivew==null
-                    View iamgeivew11 = viewById.findViewById(R.id.imageview);
+                   // View iamgeivew11 = viewById.findViewById(R.id.imageview);
                     //已经inflate了 iamgeivew11null
-                    System.out.println("shiming l----已经inflate了 iamgeivew11"+iamgeivew11);
+                   // System.out.println("shiming l----已经inflate了 iamgeivew11"+iamgeivew11);
                 }
             }
         });
-
+        // TODO: 2018/5/23  ViewStub 中的第二种的加载的方式
+//        //commLv2 ViewStub 中的第二种的加载的方式
+//        mViewStub = findViewById(R.id.view_stub);
+//        // 成员变量commLv2为空则代表未加载 commLv2 的id为ViewStub中的根布局的id
+//        View commLv2=findViewById(R.id.my_title_parent_id);
+//        if ( commLv2 == null ) {
+//            // 加载评论列表布局, 并且获取评论ListView,inflate函数直接返回ListView对象
+//            commLv2 = (View)mViewStub.inflate();
+//        } else {
+//            // ViewStub已经加载
+//        }
 
         /*
         merge 标签 在某些场景下可以减少布局的层次,由于所有的Activity的根布局都是fragment  DecorView PhoneWindow 事件的传递，包括设置setContentView 等的方法---> 我会写一篇文章独立解释安卓事件的源码解析，会更加清楚的介绍这个类，所以，当独立的一个布局文件最外层是FrameLayout的时候，并且和这个布局不需要设置 background 或者 padding的时候，可以使用<merge>标签来代替FrameLayout布局。另外一种的情况可以使用《merge》便签的情况是当前布局作为另外一个布局的子布局

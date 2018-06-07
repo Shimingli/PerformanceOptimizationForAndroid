@@ -60,14 +60,14 @@ public class JavaFourWaysOfReferenceActivity extends AppCompatActivity {
 
         mTextView2.setText(des2);
 
-
         String des3="强引用：Java中里面最广泛的使用的一种，也是对象默认的引用类型，如果又一个对象具有强引用，那么垃圾回收器是不会对它进行回收操作的，当内存的空间不足的时候，Java虚拟机将会抛出OutOfMemoryError错误，这时应用将会被终止运行";
-
         mTextView3.setText(des3);
+
+
         String des4="软引用：一个对象如果只有一个软引用，那么当内存空间充足是，垃圾回收器不会对他进行回收操作，只有当内存空间不足的时候，这个对象才会被回收，软引用可以用来实现内存敏感的高速缓存，如果配合引用队列（ReferenceQueue使用，当软引用指向对象被垃圾回收器回收后，java会把这个软引用加入到与之关联的引用队列中）";
 
         Object obj=new Object();
-
+        // TODO: 2018/5/23 SoftReference 软引用
         SoftReference<Object> sr = new SoftReference<>(obj);//这里使用了软引用...
         /*
          *在这个期间，有可能会出现内存不足的情况发生，那么GC就会直接把所有的软引用全部清除..并释放内存空间
@@ -84,13 +84,17 @@ public class JavaFourWaysOfReferenceActivity extends AppCompatActivity {
             sr = new SoftReference<>(obj);
         }
         mTextView4.setText(des4);
+
+
+
         String des5="弱引用：弱引用是比软引用更弱的一种的引用的类型，只有弱引用指向的对象的生命周期更短，当垃圾回收器扫描到只有具有弱引用的对象的时候，不敢当前空间是否不足，都会对弱引用对象进行回收，当然弱引用也可以和一个队列配合着使用";
 
         Object obj1 = new Object();
+        // TODO: 2018/5/23  WeakReference 弱引用
         WeakReference<Object> weakProductA = new WeakReference<>(obj1);
-
-
         mTextView5.setText(des5);
+
+
         String des6="虚引用：和软引用和弱引用不同，虚引用并不会对所指向的对象生命周期产生任何影响，也就是对象还是会按照它原来的方式别垃圾回收期回收，虚引用本质上只是有一个标记作用，主要用来跟踪对象被垃圾回收的活动，虚引用必须和引用队列配合使用，当对象被垃圾回收时，如果存在虚引用，那么Java虚拟机会将这个虚引用加入到与之关联的引用队列中";
 
         mTextView6.setText(des6);
@@ -102,6 +106,7 @@ public class JavaFourWaysOfReferenceActivity extends AppCompatActivity {
         // 来了解被引用的对象是否将要被垃圾回收。如果程序发现某个虚引用已经被加入到引用队列，
         // 那么就可以在所引用的对象的内存被回收之前采取必要的行动。
         ReferenceQueue queue = new ReferenceQueue ();
+        // TODO: 2018/5/23 虚引用(PhantomReference) 
         PhantomReference pr = new PhantomReference<Object>(obj1, queue);
 
 
