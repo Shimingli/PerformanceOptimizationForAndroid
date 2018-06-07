@@ -9,7 +9,6 @@
         android:text="如果这个根布局是个View，比如说是个ImagView，那么找出来的id为null，得必须注意这一点  -----2018.6.7修正这个说法，以前我说的是错误的，根本上的原因是ViewStub设置了 inflateid ，这才是更本身的原因"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
-<!--    &lt;!&ndash;如果这个根布局是个View，比如说是个ImagView，那么找出来的id为null，得必须注意这一点&ndash;&gt;-->
     <ImageView
         android:layout_marginTop="20dp"
         android:id="@+id/imageview"
