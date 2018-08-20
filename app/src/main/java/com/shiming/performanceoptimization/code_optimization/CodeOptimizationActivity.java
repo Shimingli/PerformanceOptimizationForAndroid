@@ -62,6 +62,7 @@ public  class CodeOptimizationActivity extends AppCompatActivity {
         sparseArray.append(2,"shiming2");
         sparseArray.append(3,"shiming3");
         sparseArray.append(1,"shiming4");
+
         //原型模式,这里有使用到了的，原型模式内存中复制数据的，不会调用到类的构造的方法，而且访问的权限对原型模式无效
         // 在单利模式中构造的方法访问权限是private的，但是原型模式直接无视构造方法，所以单利模式和原型模式是冲突的
         /**

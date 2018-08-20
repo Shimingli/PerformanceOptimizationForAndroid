@@ -10,7 +10,8 @@ import android.content.Context;
  */
 
 class SingleInstance {
-    private static SingleInstance sSingleInstance;
+    // 这才是 标准的一个  单利模式
+    private static volatile SingleInstance sSingleInstance;
     private final Context mContext;
 
     private SingleInstance(Context context){
